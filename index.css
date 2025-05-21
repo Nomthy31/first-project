@@ -255,7 +255,6 @@ footer ul a {
   margin-top: 2em;
 }
 /* Home section(Header+footer) end*/
-<<<<<<< HEAD
 
 #thirdpage
 {display: flex;
@@ -322,7 +321,6 @@ font-weight: 600;}
 .wrapper label input {accent-color: white;
 margin-right: 5px;}
 /* registration form end*/
-=======
 /*Login section start*/
 #Secondpage {
   display: flex;
@@ -424,4 +422,59 @@ margin-right: 5px;}
 }
 
 /* login section end */
->>>>>>> 83c5544f938bbe1bb09c31d8c7eca17f3c74671e
+/* Our services start*/
+
+.contain{min-height: 100vh;
+width: 100%;}
+
+.service-wrapper{padding: 5% 8%;}
+
+.service{display: flex;
+flex-direction: column;
+align-items: center;}
+
+.cards{display:grid;
+grid-template-columns: repeat(3,1fr);
+gap: 30px;
+margin-top: 80px;}
+
+.car-d{height: 330px;
+width: 370px;
+background-color:  rgb(210, 208, 160);
+padding: 3% 8%;
+border: 0.2px solid rgb(83, 128, 10);
+box-shadow: 5px 0px 10px rgba(83, 128, 10);
+border-radius: 8px;
+transition: 0.6s;
+display: flex;
+align-items: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+overflow: hidden;}
+
+.car-d ::after{content: "";
+position:absolute;
+top:150%;
+left:-200px;
+width: 120%;
+transform:rotate(50deg);
+background-color: whitesmoke;
+height:18px;
+filter: blur(30px);
+opacity: 0.5;
+transition: 1s;}
+
+.car-d:hover{
+    background-color: transparent;
+    transform: translateY(-8px);
+    border: rgb(83, 128, 10);
+}
+
+.car-d i{ color: whitesmoke;
+margin-top: 40px;
+margin-bottom: 20px;
+font-size: 4.8rem;}
+
+.car-d:hover i{color: rgb(83, 128, 10);
+}
