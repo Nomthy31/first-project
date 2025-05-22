@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap");*/
 /* Home Section start*/
 *,
 *::after,
@@ -17,6 +17,7 @@ img {
   max-width: 100%;
   width: 100%;
   transition: 0.5s ease-in-out;
+  box-shadow: 5px 0px 10px rgba(83, 128, 10);
 }
 a {
   display: inline-block;
@@ -265,7 +266,7 @@ background: url(green.avif) no-repeat;
 background-size: cover;
 background-position: center;}
 
-.wrapper {width: 750px;
+.wrappers {width: 750px;
 background: transparent;
 border: 2px solid transparent;
 box-shadow: rgb(83, 128, 10);
@@ -277,7 +278,8 @@ margin: 0 10px;}
 
 .wrapper h1 {font-size: 36px;
 text-align: center;
-margin-bottom: 20px;}
+margin-bottom: 20px;
+color: whitesmoke;}
 
 .input-box .input-field {position: relative;
 width: 48%;
@@ -436,7 +438,8 @@ align-items: center;}
 .cards{display:grid;
 grid-template-columns: repeat(3,1fr);
 gap: 30px;
-margin-top: 80px;}
+margin-top: 80px;
+}
 
 .car-d{height: 330px;
 width: 370px;
@@ -477,4 +480,10 @@ margin-bottom: 20px;
 font-size: 4.8rem;}
 
 .car-d:hover i{color: rgb(83, 128, 10);
+}
+h1,h2{
+  text-align: center;
+}
+p{
+  justify-content: center;
 }
