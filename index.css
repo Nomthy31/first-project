@@ -301,6 +301,91 @@ font-weight: 600;}
 
 .wrappers label input {accent-color: white;
 margin-right: 5px;}
+
+#thirdpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(green.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrappers {
+  width: 750px;
+  background: transparent;
+  border: 2px solid transparent;
+  box-shadow: rgb(83, 128, 10);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  color: rgb(83, 125, 93);
+  padding: 40px 35px 55px;
+  margin: 0 10px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.input-box .input-field {
+  position: relative;
+  width: 48%;
+  background: transparent;
+  margin: 13px 0;
+}
+
+.input-box .input-field input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgb(169, 189, 189);
+  outline: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 6px;
+  padding: 15px 40px;
+}
+
+.input-box .input-field ::placeholder {
+  color: white;
+}
+
+.input-box .input-field i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper label {
+  font-size: 14px;
+  margin: 10px 23px;
+  display: inline-block;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: rgb(210, 208, 160);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(83, 128, 10);
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(83, 125, 93);
+  font-weight: 600;
+}
+
+.wrapper label input {
+  accent-color: white;
+  margin-right: 5px;
+}
 /* registration form end*/
 /*Login section start*/
 #Secondpage {
@@ -342,7 +427,7 @@ margin-right: 5px;}
 .input-box input {
   width: 100%;
   height: 50px;
-  background: transparent;
+  /*background: transparent*/
   border: none;
   outline: none;
   border: 2px solid #d2d0a0;
@@ -355,12 +440,20 @@ margin-right: 5px;}
   color: whitesmoke;
 }
 .input-box svg {
+  color: rgb(35, 68, 43);
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+  color: rgb(169, 190, 110);
+}
+.input-box i {
   position: absolute;
   right: 10px;
   top: 30px;
   font-size: 20px;
   transform: translatey(-50%);
   color: whitesmoke;
+  transform: translateY(-50%);
 }
 .wrapper .remember-forgot {
   display: flex;
@@ -369,12 +462,21 @@ margin-right: 5px;}
   color: #d2d0a0;
 }
 .remember-forgot label input{
-  color: rgb(184, 206, 181);
+  color: rgb(184, 206, 181);}
+
+.remember-forgot label input {
+  color: rgb(82, 172, 66);
   margin-right: 3px;
 }
 .remember-forgot a {
   color: whitesmoke;
   text-decoration: none;
+}
+
+.remember-forgot a {
+  color: rgb(127, 195, 144);
+  text-decoration: none;
+  margin-top: 8px;
 }
 
 .remember-forgot a:hover {
@@ -390,7 +492,7 @@ margin-right: 5px;}
   box-shadow: 0 0 10px rgb(0, 0, 1);
   cursor: pointer;
   font-size: 16px;
-  color: #0c6a3b;
+  color: #c2cdc8;
   font-weight: 600;
   margin-top: 10%;
 }
@@ -402,6 +504,7 @@ margin-right: 5px;}
 }
 .register-link p a {
   color: #ffffff;
+  color: rgb(194, 207, 197);
   text-decoration: none;
   font-weight: 600;
 }
@@ -412,52 +515,13 @@ margin-right: 5px;}
 /* login section end */
 /* Our services start*/
 
-.contain{min-height: 100vh;
-width: 100%;}
-
-.service-wrapper{padding: 5% 8%;}
-
-.service{display: flex;
-flex-direction: column;
-align-items: center;}
-
-.cards{display:grid;
-grid-template-columns: repeat(3,1fr);
-gap: 30px;
-margin-top: 80px;
+.contain {
+  min-height: 100vh;
+  width: 100%;
 }
 
-.car-d{height: 330px;
-width: 370px;
-background-color:  rgb(210, 208, 160);
-padding: 3% 8%;
-border: 0.2px solid rgb(83, 128, 10);
-box-shadow: 5px 0px 10px rgba(83, 128, 10);
-border-radius: 8px;
-transition: 0.6s;
-display: flex;
-align-items: center;
-align-items: center;
-flex-direction: column;
-position: relative;
-overflow: hidden;}
-
-.car-d ::after{content: "";
-position:absolute;
-top:150%;
-left:-200px;
-width: 120%;
-transform:rotate(50deg);
-background-color: whitesmoke;
-height:18px;
-filter: blur(30px);
-opacity: 0.5;
-transition: 1s;}
-
-.car-d:hover{
-    background-color: transparent;
-    transform: translateY(-8px);
-    border: rgb(83, 128, 10);
+.service-wrapper {
+  padding: 5% 8%;
 }
 
 .car-d svg{ color: whitesmoke;
@@ -465,11 +529,71 @@ margin-top: 40px;
 margin-bottom: 20px;
 font-size: 4.8rem;}
 
-.car-d:hover svg{color: rgb(69, 236, 133);
+.car-d:hover svg{color: rgb(69, 236, 133);}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-h1,h2{
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.car-d {
+  height: 330px;
+  width: 370px;
+  background-color: rgb(210, 208, 160);
+  padding: 3% 8%;
+  border: 0.2px solid rgb(83, 128, 10);
+  box-shadow: 5px 0px 10px rgba(83, 128, 10);
+  border-radius: 8px;
+  transition: 0.6s;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.car-d ::after {
+  content: "";
+  position: absolute;
+  top: 150%;
+  left: -200px;
+  width: 120%;
+  transform: rotate(50deg);
+  background-color: whitesmoke;
+  height: 18px;
+  filter: blur(30px);
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.car-d:hover {
+  background-color: transparent;
+  transform: translateY(-8px);
+  border: rgb(83, 128, 10);
+}
+
+.car-d i {
+  color: whitesmoke;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 4.8rem;
+}
+
+.car-d:hover i {
+  color: rgb(83, 128, 10);
+}
+h1,
+h2 {
   text-align: center;
 }
-p{
+p {
   justify-content: center;
 }
